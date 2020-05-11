@@ -64,12 +64,16 @@ class Chart extends Component{
     
     render(){
         let country=this.props.country;
+        // if(country==='Global'){
+        //     country='';
+        // }
         if(country==='Global'){
-            country='';
+            return <div></div>
         }
         return(
-            <div className="container">
-                {country?this.BarChart():this.LineChart()}
+            <div className="chartContainer">
+                
+                {country ?this.BarChart():this.LineChart()}
             </div>
         )
     }

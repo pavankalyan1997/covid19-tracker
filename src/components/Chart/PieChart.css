@@ -1,0 +1,26 @@
+.pieChartContainer{
+    /* margin: 0 20px; */
+    height: 100%;
+    width: 100%;
+    background-color: 'black';
+    /* display: 'flex'; */
+    justify-content: center;
+    flex-direction: column;
+}
+.pieChart{
+    /* background-color: orchid; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+     width: 85%;
+     /* height: 100%; */
+     /* background-color:'green' */
+}
+@media(max-width:770px){
+    .pieChartContainer{
+    width: 100%;
+    }
+    .pieChart{
+        flex-direction: column;
+    }
+}

@@ -8,7 +8,7 @@ const Cards=({data:{confirmed,recovered,deaths,lastUpdate}})=>{
         return "Loading!....";
     }
     return(
-        <div className="container">
+        <div className="cardsContainer">
             <Grid container spacing={3} justify="center">
                 <Grid item component={Card} xs={12} md={3}className="card infected">
                     <CardContent>
